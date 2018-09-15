@@ -1,0 +1,740 @@
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" checked="checked" /><span title="Character"></span>
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" /><span title="Threats & Backpack"></span>
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" /><span title="Dependants"></span>
+<input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4" /><span title="Notes"></span>
+
+
+<div class="sheet-tab-content sheet-tab1">
+    <h1>RED MARKETS</h1>
+    
+   <tr>
+   <table class="sheet-black">
+               
+    <tr><th>Taker</th>
+    <th>&nbsp;<input type="text" name="attr_Taker" /></th>
+    </tr>
+        
+    <tr><th>Crew</th>
+    <th>&nbsp;<input type="text" name="attr_Crew" /></th>
+    </tr>
+          
+    <tr><th>Weak Spot</th>
+    <th>&nbsp;<input type="text" name="attr_Weak_Spot" /></th> 
+    </tr>
+    
+    <tr><th>Soft Spot</th>
+    <th>&nbsp;<input type="text" name="attr_Soft_Spot" /></th>
+    </tr>
+
+    <tr><th>Tough Spot</th>
+    <th>&nbsp;<select name="attr_Tough_Spot" />
+      <option value="1">Lost</option>
+      <option value="2">Bait</option>
+      <option value="3">Latent</option>
+      <option value="4">Immune</option>
+      <option value="5">Believer</option>
+      <option value="6">Steward</option>
+      <option value="7">Hustler</option>
+      <option value="8">Fenceman</option>
+      <option value="9">Scavenger</option>
+      <option value="10">Roach</option>
+      </select>
+    </tr>
+ </table>
+        <br>
+
+<tr><th><h1>Potential&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Skills</h1></th>
+ <br>
+
+ </tr>
+ </table>
+ <tr>
+ 
+   <table class="sheet-black">
+<tr><th><h2>STR</h2></th>
+
+ <td>&nbsp;<select name="attr_STR" class="sheet-skill_select" />
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>
+       
+
+<th>Haul</th>
+
+ <td>&nbsp;<select name="attr_Haul" class="sheet-skill_select" />
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>
+      <tr>
+    
+    <th>Unarmed</th>
+
+ <td>&nbsp;<select name="attr_unarmed" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Unarmed}} {{Black= [[1d10]] +@{unarmed}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+       <th><input type="text" name="attr_STR_1" /></th>
+
+ <td>&nbsp;<select name="attr_STR1"  class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+      
+     <button type="roll" value="&{template:default} {{name=@{STR_1}}} {{Black= [[1d10]] +@{STR1}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+      
+       <th>Melee</th>
+
+ <td>&nbsp;<select name="attr_Melee" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=Melee}} {{Black= [[1d10]] +@{Melee}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+      <th><input type="text" name="attr_STR_2" /></th>
+
+ <td>&nbsp;<select name="attr_STR2" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+      <button type="roll" value="&{template:default} {{name=@{STR_2}}} {{Black= [[1d10]] +@{STR2}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+      <tr>
+          
+   
+       
+        
+        <th>Resistance</th>
+
+ <td>&nbsp;<select name="attr_Resistance" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Resistance}} {{Black= [[1d10]] +@{Resistance}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+         <th><input type="text" name="attr_STR_3" /></th>
+
+ <td>&nbsp;<select name="attr_STR3" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+       <button type="roll" value="&{template:default} {{name=@{STR_3}}} {{Black= [[1d10]] +@{STR3}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+       </td>
+ </tr>
+ </table>
+<br>
+    <table>
+    <tr>
+        
+        <table class="sheet-black">
+            
+        <tr><th><h2>SPD</h2></th>
+
+ <td>&nbsp;<select name="attr_SPD" class="sheet-skill_select" />
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>></select>
+      
+      
+       <th>Athletics</th>
+
+ <td>&nbsp;<select name="attr_Athletics" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Athletics}} {{Black= [[1d10]] +@{Athletics}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr> 
+      
+      <th>Shoot</th>
+    
+ <td>&nbsp;<select name="attr_shoot" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+      
+      <button type="roll" value="&{template:default} {{name=Shoot}} {{Black= [[1d10]] +@{shoot}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+            
+       <th><input type="text" name="attr_SPD_1" /></th>
+
+ <td>&nbsp;<select name="attr_SPD1" class="sheet-skill_select" />
+     <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=@{SPD_1}}} {{Black= [[1d10]] +@{SPD1}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+      <tr>
+          <th>Stealth</th>
+
+ <td>&nbsp;<select name="attr_stealth" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+     
+      <button type="roll" value="&{template:default} {{name=Stealth}} {{Black= [[1d10]] +@{stealth}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+     <th><input type="text" name="attr_SPD_2" /></th>
+
+ <td>&nbsp;<select name="attr_SPD2" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+    
+     <button type="roll" value="&{template:default} {{name=@{SPD_2}}} {{Black= [[1d10]] +@{SPD2}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+       </td>
+       
+        
+    
+</tr>
+</table>
+<br>
+<table>
+    <tr>
+        <table class="sheet-black">
+        <th><h2>ADP</h2></th>
+
+ <td>&nbsp;<select name="attr_ADP" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>
+       
+
+<th>Refresh</th>
+
+ <td>&nbsp;<select name="attr_Refresh" class="sheet-skill_select" />
+   <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      <tr>
+    
+    <th>Awareness</th>
+
+ <td>&nbsp;<select name="attr_Awareness" class="sheet-skill_select" />
+     <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=Awareness}} {{Black= [[1d10]] +@{Awareness}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button> 
+       
+       <th>Self-Control</th>
+
+ <td>&nbsp;<select name="attr_Self_Control" class="sheet-skill_select" />
+     <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=Self-Control}} {{Black= [[1d10]] +@{Self_Control}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+      
+       <th>Scavenging</th>
+
+ <td>&nbsp;<select name="attr_Scavenging" class="sheet-skill_select" />
+   <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=Scavenging}} {{Black= [[1d10]] +@{Scavenging}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+      <th>Drive</th>
+
+ <td>&nbsp;<select name="attr_Drive" class="sheet-skill_select" />
+     <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+       <button type="roll" value="&{template:default} {{name=Drive}} {{Black= [[1d10]] +@{Drive}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+     <th>Criminality</th>
+
+ <td>&nbsp;<select name="attr_Criminality" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>    
+       
+        <button type="roll" value="&{template:default} {{name=Criminality}} {{Black= [[1d10]] +@{Criminality}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+       </td>
+        
+    </tr>
+ </table>
+ 
+ <br>
+    <table>
+    <tr>
+        
+        <table class="sheet-black">
+            
+        <tr><th><h2>INT</h2></th>
+
+ <td>&nbsp;<select name="attr_INT" class="sheet-skill_select" />
+<option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+
+    <th>Foresight</th>
+    
+ <td>&nbsp;<select name="attr_Foresight" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+      <button type="roll" value="&{template:default} {{name=Foresight}} {{Black= [[1d10]] +@{Foresight}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      
+       
+      <th><input type="text" name="attr_INT_1" /></th>
+
+ <td>&nbsp;<select name="attr_INT1" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       <button type="roll" value="&{template:default} {{name=@{INT_1}}} {{Black= [[1d10]] +@{INT1}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+      
+          <th>Profession</th>
+
+ <td>&nbsp;<select name="attr_Profession" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Profession}} {{Black= [[1d10]] +@{Profession}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+          
+            
+            
+            <th>Research</th>
+
+ <td>&nbsp;<select name="attr_Research" class="sheet-skill_select" />
+  <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+     
+      <button type="roll" value="&{template:default} {{name=Research}} {{Black= [[1d10]] +@{Research}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+    
+      
+       <th><input type="text" name="attr_INT_2" /></th>
+
+ <td>&nbsp;<select name="attr_INT2" class="sheet-skill_select" />
+   <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       <button type="roll" value="&{template:default} {{name=@{INT_2}}} {{Black= [[1d10]] +@{INT2}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+          
+           <th>Mechanics</th>
+
+ <td>&nbsp;<select name="attr_Mechanics" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Mechanics}} {{Black= [[1d10]] +@{Mechanics}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+      <th>First Aid</th>
+
+ <td>&nbsp;<select name="attr_First_Aid" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+     
+      <button type="roll" value="&{template:default} {{name=First_Aid}} {{Black= [[1d10]] +@{First_Aid}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+     
+    
+       </td>
+        <tr>
+        
+    
+</tr>
+</table>
+
+
+ <br>
+    <table>
+    <tr>
+        
+        <table class="sheet-black">
+            
+        <tr><th><h2>CHA</h2></th>
+
+ <td>&nbsp;<select name="attr_CHA" class="sheet-skill_select" />
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>
+       
+
+    <th>Networking</th>
+    
+ <td>&nbsp;<select name="attr_Networking" class="sheet-skill_select" />
+    <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+      
+      <button type="roll" value="&{template:default} {{name=Networking}} {{Black= [[1d10]] +@{Networking}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+      <th>Persuasion</th>
+
+ <td>&nbsp;<select name="attr_Persuasion" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Persuasion}} {{Black= [[1d10]] +@{Persuasion}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+        <td>
+       
+       <th>Sensitivity</th>
+
+ <td>&nbsp;<select name="attr_Sensitivity" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>    
+      
+      <button type="roll" value="&{template:default} {{name=Sensitivity}} {{Black= [[1d10]] +@{Sensitivity}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+      <tr>
+      
+            <th>Deception</th>
+
+ <td>&nbsp;<select name="attr_Deception" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>   
+     
+      <button type="roll" value="&{template:default} {{name=Deception}} {{Black= [[1d10]] +@{Deception}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+     <th>Intimidation</th>
+
+ <td>&nbsp;<select name="attr_Intimidation" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>  
+       
+        <button type="roll" value="&{template:default} {{name=Intimidation}} {{Black= [[1d10]] +@{Intimidation}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+       
+      <th>Leadership</th>
+
+ <td>&nbsp;<select name="attr_Leadership" class="sheet-skill_select" />
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option></select>    
+     
+      <button type="roll" value="&{template:default} {{name=Leadership}} {{Black= [[1d10]] +@{Leadership}}}  {{+ ?{Modifier|0}}} {{vs Red= [[1d10]]}}" /></button>
+     
+     
+     
+    
+       </td>
+    
+        
+        <tr>
+            
+            
+        
+    
+</tr>
+</table>
+
+ 
+<br>
+    <table>
+    <tr>
+        
+        <table class="sheet-black">
+            
+        <tr><th><h2>WIL</h2></th>
+
+ <td>&nbsp;<select name="attr_CHA" class="sheet-skill_select" />
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">3</option>
+      <option value="5">4</option>
+      <option value="6">5</option></select>
+      <tr>
+</table>
+
+
+
+</div>
+
+
+<div class="sheet-tab-content sheet-tab2">
+    <h1>RED MARKETS</h1>
+ 
+ <table>
+     
+     <table class="sheet-black">
+       <th><h3>Threats</h3><td></td>
+       <tr><th>Detachment
+       <td>&nbsp;<input type="checkbox" name="attr_Det1"/>
+       <input type="checkbox" name="attr_Det2"/>
+       <input type="checkbox" name="attr_Det3"/>
+       <input type="checkbox" name="attr_Det4"/>
+       <input type="checkbox" name="attr_Det5"/>
+       <input type="radio" name="attr_DetCrack"/>
+       <input type="checkbox" name="attr_Det6"/>
+       <input type="checkbox" name="attr_Det7"/>
+       <input type="checkbox" name="attr_Det8"/>
+       <input type="checkbox" name="attr_Det9"/>
+       <input type="checkbox" name="attr_Det10"/>
+       <input type="radio" name="attr_DetCrumble"/>
+       <input type="checkbox" name="attr_Det11"/>
+       <input type="checkbox" name="attr_Det12"/>
+       <input type="checkbox" name="attr_Det13"/>
+       <input type="checkbox" name="attr_Det14"/>
+       <input type="checkbox" name="attr_Det15"/>
+       <input type="radio" name="attr_DetBreak"/>
+       </th>
+       
+       
+       
+       
+       <tr><th>Stress
+       <td>&nbsp;<input type="checkbox" name="attr_Stress1"/>
+       <input type="checkbox" name="attr_Stress2"/>
+       <input type="checkbox" name="attr_Stress3"/>
+       <input type="checkbox" name="attr_Stress4"/>
+       <input type="checkbox" name="attr_Stress5"/>
+       <input type="radio" name="attr_StressCrack"/>
+       <input type="checkbox" name="attr_Stress6"/>
+       <input type="checkbox" name="attr_Stress7"/>
+       <input type="checkbox" name="attr_Stress8"/>
+       <input type="checkbox" name="attr_Stress9"/>
+       <input type="checkbox" name="attr_Stress10"/>
+       <input type="radio" name="attr_StressCrumble"/>
+       <input type="checkbox" name="attr_Stress11"/>
+       <input type="checkbox" name="attr_Stress12"/>
+       <input type="checkbox" name="attr_Stress13"/>
+       <input type="checkbox" name="attr_Stress14"/>
+       <input type="checkbox" name="attr_Stress15"/>
+       <input type="radio" name="attr_StressBreak"/>
+       </th>
+      
+       <tr><th>Trauma
+       <td>&nbsp;<input type="checkbox" name="attr_Trauma1"/>
+       <input type="checkbox" name="attr_Trauma2"/>
+       <input type="checkbox" name="attr_Trauma3"/>
+       <input type="checkbox" name="attr_Trauma4"/>
+       <input type="checkbox" name="attr_Trauma5"/>
+       <input type="radio" name="attr_TraumaCrack"/>
+       <input type="checkbox" name="attr_Trauma6"/>
+       <input type="checkbox" name="attr_Trauma7"/>
+       <input type="checkbox" name="attr_Trauma8"/>
+       <input type="checkbox" name="attr_Trauma9"/>
+       <input type="checkbox" name="attr_Trauma10"/>
+       <input type="radio" name="attr_TraumaCrumble"/>
+       <input type="checkbox" name="attr_Trauma11"/>
+       <input type="checkbox" name="attr_Trauma12"/>
+       <input type="checkbox" name="attr_Trauma13"/>
+       <input type="checkbox" name="attr_Trauma14"/>
+       <input type="checkbox" name="attr_Trauma15"/>
+       <input type="radio" name="attr_TraumaBreak"/>
+       </th>
+       
+
+   
+</sheet>
+</table>
+</div>
+
+
+
+
+
+       
+          
+                
+
+
+
+
+<div class="sheet-tab-content sheet-tab3">
+    
+    <h1>RED MARKETS</h1>
+   
+    <table class="noBorder centeredTable">
+                            <tbody><tr class="noBorder">
+                                <td class="noBorder"></td>
+                                <td class="noBorder centerText">
+                                    <h4 class="centerText">Head:</h4>
+                                    <tr>   <table><select name="attr_Head1" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+     <tr>
+      <select name="attr_Head2" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      <tr>
+      <select name="attr_Head3" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+    </table>
+<tr>  <table><select name="attr_Head4" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      <tr><select name="attr_Head5" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      <tr><select name="attr_Head6" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      </table>
+<tr> <table><select name="attr_Head7" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      <tr><select name="attr_Head8" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      <tr><select name="attr_Head9" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option>
+      </table>
+<tr>  <table><select name="attr_Head10" class="sheet-hit_select" />
+      <option value="0"></option>
+      <option value="1">/</option>
+      <option value="2">X</option></table>      
+      
+                                </td>
+                                <td class="noBorder"></td>
+                            </tr>
+                        </tbody></table>
+    
+</div>
+
+<div class="sheet-tab-content sheet-tab4">
+   
+   <h1>RED MARKETS</h1>
+    <h3>Character History</h3>
+        <textarea class="sheet-textarea" name="attr_Character_History"></textarea>
+        <h3>Allies/Contacts</h3>
+        <textarea class="sheet-textarea" name="attr_Allies_Contacts"></textarea>
+        <h3>Notes</h3>
+        <textarea class="sheet-textarea" name="attr_Notes">
+        </textarea>
+        
+        
+
